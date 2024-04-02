@@ -1,0 +1,1 @@
+$execute in the_nether positioned $(X) 255 $(Z) run function anp:to_nether/3
