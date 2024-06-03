@@ -9,7 +9,7 @@ scoreboard players operation @s nether_portal_pos_per_8_Z /= #8 nether_portal_ma
 execute store result storage anp:nether_portal_pos Z int 1 run scoreboard players get @s nether_portal_pos_per_8_Z
 
 execute store result score @s nether_portal_pos_Y run data get entity @s Pos[1]
-execute if score @s nether_portal_pos_Y matches ..4 run scoreboard players set @s nether_portal_pos_Y 5
+execute if score @s nether_portal_pos_Y matches ..5 run scoreboard players set @s nether_portal_pos_Y 6
 execute store result storage anp:nether_portal_pos Y int 1 run scoreboard players get @s nether_portal_pos_Y
 
 execute store result score @s nether_portal_clone_pos_X run scoreboard players get @s nether_portal_pos_per_8_X
