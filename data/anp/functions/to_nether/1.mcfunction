@@ -25,10 +25,4 @@ scoreboard players remove @s nether_portal_clone_pos_Z 2
 execute store result storage anp:nether_portal_pos clone_Z int 1 run scoreboard players get @s nether_portal_clone_pos_Z
 
 function anp:to_nether/2 with storage anp:nether_portal_pos
-
-data remove storage anp:nether_portal_pos X
-data remove storage anp:nether_portal_pos Y
-data remove storage anp:nether_portal_pos Z
-data remove storage anp:nether_portal_pos clone_X
-data remove storage anp:nether_portal_pos clone_Y
-data remove storage anp:nether_portal_pos clone_Z
+function anp:to_nether/clean

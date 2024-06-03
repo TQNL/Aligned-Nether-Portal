@@ -1,4 +1,4 @@
-tellraw @a {"text": "Loaded anp","color": "#00FF00"}
+tellraw @a {"text": "Loaded Aligned Nether Portal","color": "#00FF00"}
 scoreboard objectives add nether_portal_pos_per_8_X dummy
 scoreboard objectives add nether_portal_pos_per_8_Z dummy
 scoreboard objectives add nether_portal_math dummy
