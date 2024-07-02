@@ -1,7 +1,5 @@
-execute as @a at @s if dimension overworld unless block ~ ~ ~ nether_portal if entity @s[tag=anp_in_nether_portal] run tag @s remove anp_in_nether_portal
-execute as @a[gamemode=!creative,gamemode=!spectator,tag=!vanilla_np] at @s if dimension overworld if block ~ ~ ~ nether_portal unless entity @s[tag=anp_in_nether_portal] run function anp:to_nether/1
-
-# implement netherroof compatability? no
+# player gets tp-ed into the nether portal with the full hitbox, so this can detect when they have returned from the nether trip
+execute as @a at @s if dimension overworld unless block ~ ~ ~ nether_portal unless block ~0.301 ~ ~ nether_portal unless block ~ ~ ~0.301 nether_portal unless block ~-0.301 ~ ~ nether_portal unless block ~ ~ ~-0.301 nether_portal unless block ~ ~1.801 ~ nether_portal unless block ~ ~1.501 ~ nether_portal unless block ~ ~0.601 ~ nether_portal if entity @s[advancements={anp:enter_np_without_tag=true}] run advancement revoke @s only anp:enter_np_without_tag
 
 # enable vanilla nether portal behaviour for the player
 scoreboard players enable @a vanilla_nether_portals_for_you
