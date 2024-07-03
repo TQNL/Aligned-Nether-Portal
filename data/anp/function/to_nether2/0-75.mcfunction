@@ -1,5 +1,7 @@
 # bottom reached - contruct bottom from this cornor
-say branch
+$say branch: $(direction)
+say branching
+$data merge storage anp:nether_portal_pos {positioning:"$(positioning)",direction:"$(direction)"}
 execute if block ~ ~-1 ~ obsidian run return run function anp:to_nether2/1
 execute positioned ~ ~-1 ~ if block ~ ~-1 ~ obsidian run return run function anp:to_nether2/1
 execute positioned ~ ~-2 ~ if block ~ ~-1 ~ obsidian run return run function anp:to_nether2/1
