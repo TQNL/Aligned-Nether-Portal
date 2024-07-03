@@ -11,4 +11,3 @@ scoreboard objectives add vanilla_nether_portals_for_you trigger
 scoreboard objectives add ov_nether_portal_pos_X dummy
 scoreboard objectives add ov_nether_portal_pos_Y dummy
 scoreboard objectives add ov_nether_portal_pos_Z dummy
-scoreboard objectives add anp_distance dummy

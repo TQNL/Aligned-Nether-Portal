@@ -1,5 +1,5 @@
 $execute in the_nether positioned $(X) 0 $(Z) run forceload add ~-1 ~-1 ~1 ~1
-say 4
+
 $execute in the_nether if block $(X) $(Y) $(Z) nether_portal run return run forceload remove ~-1 ~-1 ~1 ~1
 
 # make portal

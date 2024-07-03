@@ -8,4 +8,4 @@ execute unless block ~ ~ ~-1 nether_portal if block ~ ~ ~1 nether_portal run dat
 ## east
 execute unless block ~-1 ~ ~ nether_portal if block ~1 ~ ~ nether_portal run data merge storage anp:nether_portal_pos {positioning:"~1 ~ ~",direction:"east"}
 
-function anp:to_nether2/0-75 with storage anp:nether_portal_pos
+function anp:to_nether2/0-75
