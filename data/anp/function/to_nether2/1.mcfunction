@@ -20,3 +20,4 @@ execute store result storage anp:nether_portal_pos overworld_Z int 1 run data ge
 kill @n[type=marker,tag=anp_position]
 function anp:to_nether2/2 with storage anp:nether_portal_pos
 function anp:to_nether2/clean
+function anp:get_player_pos with entity @s

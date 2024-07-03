@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "nbt": "Tags:[\"anp_first_time_generated\"]",
+          "location": {
+            "dimension": "minecraft:the_nether"
+          },
+          "movement": {
+            "speed": {
+              "min": 0.1,
+              "max": 1000
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "anp:safe/no"
+  }
+}
