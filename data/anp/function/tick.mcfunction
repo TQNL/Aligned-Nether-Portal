@@ -8,5 +8,4 @@ execute as @a[scores={vanilla_nether_portals_for_you=1..}] run function anp:vani
 execute as @a[scores={vanilla_nether_portals_for_you=1..}] run scoreboard players reset @s vanilla_nether_portals_for_you
 
 # make a way back through for players stuck in a bad spawn
-#execute as @a[predicate=anp:player_in_nether,tag=anp_first_time_generated,limit=1] at @s run function anp:safe with entity @s
-execute as @e[type=area_effect_cloud,tag=anp_player_pos,nbt={Age:20}] at @s run function anp:safe2 with entity @s
+execute as @e[type=area_effect_cloud,tag=anp_player_pos,nbt={Age:200}] at @s run function anp:safe2 with entity @s
