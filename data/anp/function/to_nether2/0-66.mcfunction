@@ -1,7 +1,7 @@
 # all 4 directions get tested anyway, the 2 that detected obsidian, pick the closest side
 $tellraw @a [{"text":"$(direction): "},{"score":{"name":"$(direction)","objective":"anp_distance"}},{"text":"    $(antidirection): "},{"score":{"name":"$(antidirection)","objective":"anp_distance"}}]
 
-
+$execute if score $(direction) anp_distance matches 0 if score $(antidirection) anp_distance matches 0 run return 0
 
 
 
