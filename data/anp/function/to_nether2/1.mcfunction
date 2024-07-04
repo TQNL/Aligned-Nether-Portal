@@ -11,7 +11,10 @@ execute store result storage anp:nether_portal_pos Z int 1 run scoreboard player
 
 execute store result score @s nether_portal_pos_per_nether_Y run data get entity @n[type=marker,tag=anp_position] Pos[1]
 execute if score @s nether_portal_pos_per_nether_Y matches ..5 run scoreboard players set @s nether_portal_pos_per_nether_Y 6
+# set Y below 118 (consistant with minecraft code)
+execute if score @s nether_portal_pos_per_nether_Y matches 119.. run scoreboard players set @s nether_portal_pos_per_nether_Y 118
 execute store result storage anp:nether_portal_pos Y int 1 run scoreboard players get @s nether_portal_pos_per_nether_Y
+
 
 execute store result storage anp:nether_portal_pos overworld_X int 1 run data get entity @n[type=marker,tag=anp_position] Pos[0]
 execute store result storage anp:nether_portal_pos overworld_Y int 1 run data get entity @n[type=marker,tag=anp_position] Pos[1]
@@ -20,4 +23,4 @@ execute store result storage anp:nether_portal_pos overworld_Z int 1 run data ge
 kill @n[type=marker,tag=anp_position]
 function anp:to_nether2/2 with storage anp:nether_portal_pos
 function anp:to_nether2/clean
-function anp:safe with entity @s
+function anp:safe/safe with entity @s
